@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="SMExpert Shopify Studio - Shopify Store Creation, Ads Management, App Promotion & Ranking Experts">
+<meta name="keywords" content="Shopify expert, Shopify store creation, TikTok ads, Meta ads, Shopify app promotion">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SMExpert Shopify Studio</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:Inter;background:#0f1117;color:#fff;scroll-behavior:smooth}
+.hero{padding:130px 20px;text-align:center;background:radial-gradient(circle at top,#1a2140,#0f1117)}
+.hero h1{font-size:56px}
+.hero p{color:#b5b5b5;font-size:20px}
+.contact-line{color:#8faaff;margin-top:12px}
+.btn{background:#4f8cff;padding:14px 34px;border-radius:30px;color:#fff;text-decoration:none;font-weight:600;display:inline-block;margin-top:25px}
+section{padding:90px 20px;max-width:1100px;margin:auto}
+.title{text-align:center;font-size:40px;margin-bottom:40px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:25px}
+.card{background:#181b23;padding:32px;border-radius:18px;transition:.4s;opacity:0;transform:translateY(40px)}
+.card.show{opacity:1;transform:translateY(0)}
+.card:hover{transform:translateY(-8px)}
+.portfolio img{width:100%;border-radius:14px}
+form{max-width:500px;margin:auto;display:grid;gap:14px}
+input,textarea{padding:14px;border-radius:12px;border:none;font-family:Inter}
+button{padding:14px;border:none;border-radius:25px;background:#4f8cff;color:white;font-weight:600}
+footer{text-align:center;color:#777;padding:40px}
+.whatsapp{position:fixed;bottom:25px;right:25px;background:#25d366;color:white;padding:16px 20px;border-radius:50%;font-size:22px;text-decoration:none}
+</style>
+</head>
+<body>
+
+<div class="hero">
+<h1>SMExpert Shopify Studio</h1>
+<p>Scaling Shopify Brands With High-Converting Stores & Paid Ads</p>
+<div class="contact-line">📧 support@jackthomas.uk | 📞 +44 7414909250</div>
+<a href="#services" class="btn">Get Started</a>
+</div>
+
+<section id="services">
+<h2 class="title">Our Services</h2>
+<div class="grid">
+<div class="card">Shopify Store Creation & Optimization</div>
+<div class="card">Shopify App Promotion & Growth</div>
+<div class="card">TikTok Ads Management</div>
+<div class="card">Meta Ads Campaigns</div>
+<div class="card">App Ranking & ASO</div>
+</div>
+</section>
+
+<section>
+<h2 class="title">Our Work</h2>
+<div class="grid portfolio">
+<img src="https://picsum.photos/400/300?1">
+<img src="https://picsum.photos/400/300?2">
+<img src="https://picsum.photos/400/300?3">
+</div>
+</section>
+
+<section id="contact">
+<h2 class="title">Contact Us</h2>
+<form action="mailto:support@jackthomas.uk" method="post" enctype="text/plain">
+<input type="text" placeholder="Your Name" required>
+<input type="email" placeholder="Your Email" required>
+<textarea rows="5" placeholder="Your Message"></textarea>
+<button>Send Message</button>
+</form>
+</section>
+
+<footer>
+© 2026 SMExpert Shopify Studio — All Rights Reserved
+</footer>
+
+<a class="whatsapp" href="https://wa.me/447414909250" target="_blank">💬</a>
+
+<script>
+const cards=document.querySelectorAll('.card');
+const observer=new IntersectionObserver(entries=>{
+ entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('show')})
+},{threshold:.2});
+cards.forEach(c=>observer.observe(c));
+</script>
+
+</body>
+</html>
